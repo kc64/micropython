@@ -64,8 +64,8 @@ For running PIO programs, see :class:`rp2.StateMachine`.
       If this value is 0x0, STATUS is all 1's when the TX FIFO is less than the threshold.
       If this value is 0x1, STATUS is all 1's when the RX FIFO is less than the threshold.
       If this value is 0x2, STATUS is all 1's when the indexed IRQ is raised. (RP235x only).
-    - *status_n* is the parameter specified *status_sel* above. See the datasheets for
-      the details.
+    - *status_n* is the value of the parameter specified in *status_sel* above. See the
+      datasheets for the details.
 
 .. function:: asm_pio_encode(instr, sideset_count, sideset_opt=False)
 
