@@ -60,7 +60,7 @@ For running PIO programs, see :class:`rp2.StateMachine`.
       combined into a single 8-word FIFO for one direction only. The options
       are `PIO.JOIN_NONE`, `PIO.JOIN_RX` and `PIO.JOIN_TX`.
     - *status_sel* configures which parameter is used by the PIO MOV (101)
-      instruction, ie. MOX X, STATUS.
+      instruction, ie. MOV X, STATUS.
       If this value is 0x0, STATUS is all 1's when the TX FIFO is less than the threshold.
       If this value is 0x1, STATUS is all 1's when the RX FIFO is less than the threshold.
       If this value is 0x2, STATUS is all 1's when the indexed IRQ is raised. (RP235x only).
